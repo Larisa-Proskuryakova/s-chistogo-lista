@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
-  font-weight: 400; /*толщина шрифта*/
+  font-weight: 400;
   background-color: #1e1e1e;
 }
 
@@ -22,12 +22,12 @@ blockquote {
 .content-section {
   box-sizing: border-box;
   width: 360px;
-  /*min-height: 100px;*/
-  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .content-section_theme_dark {
-  color: #fff;
+  color: #f5f5f5;
   background-color: #131313;
 }
 
@@ -60,17 +60,21 @@ blockquote {
 }
 
 .header__menu-link {
-  color: #fff;
+  color: #f5f5f5;
   font-size: 16px;
   line-height: 1.2;
 }
 
-.header__menu-item-active .header__menu-link {
+.header__menu-item-active {
+  text-decoration: none;
+}
+
+.header__menu-link {
   text-decoration: none;
 }
 
 .cover {
-  padding: 7px 24px 30px 20px;
+  padding: 7px 24px 32px 20px;
   min-height: 258px;
   background-image: url(../images/cover.svg);
   background-repeat: no-repeat;
@@ -84,7 +88,7 @@ blockquote {
   font-family: "EB Garamond", serif;
   font-weight: 400;
   font-size: 72px;
-  line-height: 1; /*величина м/у строками*/
+  line-height: 1;
 }
 
 .accent-span {
@@ -120,7 +124,7 @@ blockquote {
 .intro__date {
   font-size: 16px;
   line-height: 1.2;
-  white-space: nowrap; /*дата в 1 строку*/
+  white-space: nowrap;
 }
 
 .intro__main-text {
@@ -174,18 +178,23 @@ blockquote {
   gap: 32px;
   list-style: none;
 }
+
 .card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   border-radius: 30px;
   padding: 20px;
 }
+
 .card_theme_dark {
-  color: #F5F5F5;
+  color: #f5f5f5;
   background-color: #343434;
 }
 
 .card_theme_bright {
   color: #131313;
-  background-color: #FEE42A;
+  background-color: #fee42a;
 }
 
 .card__author-photo {
@@ -197,18 +206,22 @@ blockquote {
 .card__author-name {
   margin: 8px 0 0;
   font-weight: 700;
+  line-height: 1.35;
+  height: 20px;
 }
 
 .card__title {
-  margin: 8px auto;
+  margin-bottom: 8px;
   font-family: "EB Garamond", serif;
   font-weight: 500;
   font-size: 22px;
   line-height: 1.35;
+  width: 100%;
 }
+
 .card__text {
   font-size: 16px;
-  line-height: 1.35;
+  line-height: 21.6px;
 }
 
 .footer {
@@ -226,7 +239,7 @@ blockquote {
 }
 
 .footer__links a {
-  color: #F5F5F5;
+  color: #f5f5f5;
   font-size: 14px;
   line-height: 1.25;
   text-decoration: none;
